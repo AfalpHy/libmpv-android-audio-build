@@ -159,6 +159,10 @@ cpuflags=
 	\
 	--enable-filter=overlay \
 	--enable-filter=equalizer \
+	--enable-filter=aresample \
+    --enable-filter=aformat \
+    --enable-filter=volume \
+    --enable-filter=anull \
 	\
 	--enable-protocol=async \
 	--enable-protocol=cache \
