@@ -57,15 +57,6 @@ cpuflags=
     --disable-avdevice \
     --enable-mbedtls \
     --enable-avfilter \
-    --disable-everything \
-    --enable-filter=superequalizer \
-    --enable-filter=equalizer \
-    --enable-filter=aresample \
-    --enable-filter=volume \
-    --enable-protocol=file,http,https,tcp,tls \
-    --enable-demuxer=aac,ac3,aiff,amr,ape,asf,flac,matroska,mp3,mpc,mov,ogg,rm,truehd,wav,wv \
-    --enable-decoder=aac,aac_latm,ac3,alac,amrnb,amrwb,ape,cook,flac,mp1,mp2,mp3,mp3float,mpc7,mpc8,opus,ra_144,ra_288,shorten,tak,truehd,vorbis,wavpack,wmalossless,wmapro,wmav1,wmav2,wmavoice \
-    --enable-parser=aac,ac3,flac,mpegaudio,opus,vorbis
 
 make -j$cores
 make DESTDIR="$prefix_dir" install
